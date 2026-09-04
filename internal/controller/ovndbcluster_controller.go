@@ -1349,6 +1349,7 @@ func (r *OVNDBClusterReconciler) generateServiceConfigMaps(
 			Type:      util.TemplateTypeNone,
 			AdditionalTemplate: map[string]string{
 				"openstack-network-exporter.yaml": "/ovndbcluster/config/openstack-network-exporter.yaml",
+				"web-config.yaml":                 "/ovndbcluster/config/web-config.yaml",
 			},
 			InstanceType:  instance.Kind,
 			Labels:        cmLabels,
